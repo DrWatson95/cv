@@ -3,82 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Sergey Travin CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="ava.jpg" width="200" alt="my photo">
-    <h1>Травин Сергей</h1>
-    <!-- <p><em>Я работаю на <strong>Векторе</strong></em></p> -->
-    <p><em>Болею за <strong>Lakers</strong></em></p>
-    <p><em>Смотрю <strong>ЧГК</strong></em></p>
-    <hr>
+    <div class="container">
+        <div class="info">
+            <img src="ava.jpg"  alt="my photo" class="avatar">
+            <h1>Травин Сергей</h1>
+            <!-- <p><em>Я работаю на <strong>Векторе</strong></em></p> -->
+            <p>Болею за <strong>Lakers</strong></p>
+            <p>Смотрю <strong>ЧГК</strong></p>
+            <h4>Мои социальные сети</h4>
+                <a href="https://vk.com/dr_watson_24" target="_blank">Vk</a>
+                |
+                <a href="https://t.me/Dr_Watson_24" target="_blank">Telegram</a>
+                <!-- <li><a href="https://vk.com" target="_blank">vk</a></li> -->
+        </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-        <li><a href="https://vk.com/dr_watson_24" target="_blank">Vk</a></li>
-        <li><a href="https://t.me/Dr_Watson_24" target="_blank">Telegram</a></li>
-        <!-- <li><a href="https://vk.com" target="_blank">vk</a></li> -->
-    </ul>
-    <hr>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Баскетбол</li>
-        <li>Музыка</li>
-        <li>Гитара</li>
-        <li>Спидкубинг</li>
-        <li>Головоломки</li>
-        <li>Поиск ответов</li>
-        <li>Философия</li>
-        <!-- <li>Чтение</li> -->
-    </ol>
-    <hr>
-    
-    <h2>Любимые песни</h2>
-    <a href="youtube.html" target="_blank">The Best Songs (YoutTube)</a>
-    <hr>
-    <!-- <h2>Опыт работы</h2>
-    <table border="2">
-        <thead>
-            <tr>
-                <th>Company</th>
-                <th>Name</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Vector</td>
-                <td>Programmer</td>
-                <td>3 years</td>
-            </tr>
-            <tr>
-                <td>Army</td>
-                <td>Soldier</td>
-                <td>1 years</td>
-            </tr>
-            <tr>
-                <td>Vector</td>
-                <td>Programmer</td>
-                <td>3 years</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
+        
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Баскетбол</li>
+                <li>Музыка</li>
+                <li>Гитара</li>
+                <li>Спидкубинг</li>
+                <li>Головоломки</li>
+                <li>Поиск ответов</li>
+                <li>Философия</li>
+                <!-- <li>Чтение</li> -->
+            </ol>
+        </div>
 
-    </table> 
-    <hr> -->
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Your Name">
-        <br>
-        <label for="email">Enter Email</label>
-        <input type="emailemail" id="email" placeholder="Your Email">
-        <br>
-        <label for="text">Your Message</label>
-        <br>
-        <textarea id="text" rows="2" cols="20"></textarea>
-        <br>
-        <input type="submit"  value="Send">
-    </form>
-    <hr>
+        <div class="card bg-red">
+            <h2>Любимые песни</h2>
+            <ul class="linklist">
+                <li><a href="https://www.youtube.com/watch?v=E0ozmU9cJDg" target="_blank">Master of Puppets</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7pOr3dBFAeY" target="_blank">Still Loving You</a></li>
+                <li><a href="https://www.youtube.com/watch?v=tAGnKpE4NCI" target="_blank">Nothing Else Matters</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8SbUC-UaAxE" target="_blank">November Rain</a></li>
+            </ul>
+        </div>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>std::vector</td>
+                        <td>Software Engineer</td>
+                        <td>2017 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Army</td>
+                        <td>Soldier</td>
+                        <td>2019 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td>std::vector</td>
+                        <td>Lead Developer</td>
+                        <td>2021 - now</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table> 
+        </div>
+
+
+        <hr>
+        <h2 class="bg-red">Связаться со мной</h2>
+        <form action="/">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <br>
+            <label for="email">Enter Email</label>
+            <input type="emailemail" id="email" placeholder="Your Email">
+            <br>
+            <label for="text">Your Message</label>
+            <br>
+            <textarea id="text" rows="2" cols="20"></textarea>
+            <br>
+            <input type="submit"  value="Send">
+        </form>
+        <!-- <div class="box-model">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+    </div>
+    <div style="margin-bottom: 500px;"></div>
 </body>
 </html>
